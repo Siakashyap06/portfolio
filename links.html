@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links & Resume | SIA KASHYAP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="links.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+</head>
+<body>
+    <div id="cursor-trail"></div>
+    <div class="custom-cursor" id="custom-cursor"></div>
+    
+    <!-- Navigation -->
+    <nav class="lab-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Siaa Kashyap | (347)-204-3907 | kashs015@newschool.edu</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="photobooth.html" class="nav-link">Photobooth</a>
+                <a href="links.html" class="nav-link active">Links & Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="lab-main">
+        <div id="grid-canvas"></div>
+        
+        <div class="page-container">
+            <div class="file-window module-frame">
+                <div class="window-header">
+                    <div class="window-controls">
+                        <span class="window-control close"></span>
+                        <span class="window-control minimize"></span>
+                        <span class="window-control maximize"></span>
+                    </div>
+                    <div class="window-title">LAB_DOCUMENTS</div>
+                </div>
+                
+                <div class="window-body">
+                    <div class="document-section">
+                        <h2 class="document-title">CONTACT & LINKS</h2>
+                        
+                        <div class="link-item">
+                            <div class="link-icon">📧</div>
+                            <div class="link-content">
+                                <div class="link-label">Email</div>
+                                <a href="mailto:your.email@example.com" class="link-value">your.email@example.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="link-item">
+                            <div class="link-icon">💼</div>
+                            <div class="link-content">
+                                <div class="link-label">LinkedIn</div>
+                                <a href="https://www.linkedin.com/in/sia-kashyap-919708320" target="_blank" class="link-value">linkedin.com/in/sia-kashyap-919708320</a>
+                            </div>
+                        </div>
+                        
+                        <div class="link-item">
+                            <div class="link-icon">🐙</div>
+                            <div class="link-content">
+                                <div class="link-label">GitHub</div>
+                                <a href="https://github.com/yourusername" target="_blank" class="link-value">github.com/yourusername</a>
+                            </div>
+                        </div>
+                        
+                        <div class="link-item">
+                            <div class="link-icon">🎨</div>
+                            <div class="link-content">
+                                <div class="link-label">Portfolio</div>
+                                <a href="#" class="link-value">Additional Portfolio Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="document-section">
+                        <h2 class="document-title">RESUME</h2>
+                        
+                        <div class="resume-download">
+                            <div class="resume-preview">
+                                <div class="resume-icon">📄</div>
+                                <div class="resume-info">
+                                    <div class="resume-name">Resume.pdf</div>
+                                    <div class="resume-meta">Click to download</div>
+                                </div>
+                            </div>
+                            <button class="download-btn" id="download-resume">
+                                <span>DOWNLOAD</span>
+                            </button>
+                        </div>
+                        
+                        <div class="resume-content">
+                            <div class="resume-section">
+                                <h3 class="resume-section-title">EXPERIENCE</h3>
+                                <div class="resume-item">
+                                    <div class="resume-item-header">
+                                        <div class="resume-item-title">Creative Technologist</div>
+                                        <div class="resume-item-date">2022 - Present</div>
+                                    </div>
+                                    <div class="resume-item-company">Company Name</div>
+                                    <div class="resume-item-description">
+                                        Developing interactive installations and generative art projects using p5.js, TouchDesigner, and physical computing tools.
+                                    </div>
+                                </div>
+                                
+                                <div class="resume-item">
+                                    <div class="resume-item-header">
+                                        <div class="resume-item-title">Interactive Media Developer</div>
+                                        <div class="resume-item-date">2020 - 2022</div>
+                                    </div>
+                                    <div class="resume-item-company">Studio Name</div>
+                                    <div class="resume-item-description">
+                                        Created real-time visual systems and data visualizations for exhibitions and live performances.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="resume-section">
+                                <h3 class="resume-section-title">EDUCATION</h3>
+                                <div class="resume-item">
+                                    <div class="resume-item-header">
+                                        <div class="resume-item-title">Degree in [Your Field]</div>
+                                        <div class="resume-item-date">2016 - 2020</div>
+                                    </div>
+                                    <div class="resume-item-company">University Name</div>
+                                </div>
+                            </div>
+                            
+                            <div class="resume-section">
+                                <h3 class="resume-section-title">SKILLS</h3>
+                                <div class="skills-list">
+                                    <span class="skill-tag">p5.js</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">TouchDesigner</span>
+                                    <span class="skill-tag">Arduino</span>
+                                    <span class="skill-tag">WebGL</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Creative Coding</span>
+                                    <span class="skill-tag">Physical Computing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/grid-animation.js"></script>
+    <script src="js/cursor-trail.js"></script>
+    <script src="js/links.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

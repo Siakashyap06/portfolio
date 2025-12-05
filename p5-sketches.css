@@ -1,0 +1,93 @@
+/* Other p5 Sketches Page Styles */
+
+body.p5-sketches-page .lab-main {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+body.p5-sketches-page .page-container {
+    min-height: calc(100vh - 80px);
+    padding: 2rem;
+    padding-bottom: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sketches-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.sketch-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-family: 'Kalam', cursive;
+}
+
+.sketch-card:hover {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+.sketch-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--notebook-text);
+    margin-bottom: 0.8rem;
+    font-family: 'Kalam', cursive;
+}
+
+.sketch-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-family: 'Kalam', cursive;
+}
+
+.sketch-link {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: var(--notebook-text);
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.sketch-link:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.3);
+    transform: translateX(4px);
+}
+
+.sketch-link::after {
+    content: ' →';
+    margin-left: 0.3rem;
+    transition: transform 0.3s ease;
+}
+
+.sketch-link:hover::after {
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .sketches-container {
+        grid-template-columns: 1fr;
+    }
+    
+    body.p5-sketches-page .page-container {
+        padding: 1rem;
+    }
+}
+

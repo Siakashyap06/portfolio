@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photobooth | SIA KASHYAP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="photobooth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+</head>
+<body>
+    <div id="cursor-trail"></div>
+    <div class="custom-cursor" id="custom-cursor"></div>
+    
+    <!-- Navigation -->
+    <nav class="lab-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Siaa Kashyap | (347)-204-3907 | kashs015@newschool.edu</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="photobooth.html" class="nav-link active">Photobooth</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="lab-main">
+        <div id="grid-canvas"></div>
+        
+        <div class="page-container">
+            <!-- Link to GitHub Photobooth -->
+            <div class="photobooth-link-container">
+                <div class="photobooth-card notebook-card">
+                    <h2 class="panel-title" style="font-family: 'Kalam', cursive; color: var(--notebook-text);">Try My Photobooth</h2>
+                    <p style="margin: 1.5rem 0; line-height: 2; color: var(--notebook-text); font-family: 'Kalam', cursive; font-size: 1.1rem;">
+                        Experience my photobooth and get an instant photo strip to download.
+                    </p>
+                    <a href="https://siakashyap06.github.io/Photoboothstrip/" target="_blank" class="photobooth-external-link">
+                        <span>🎬 Open Photobooth →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/grid-animation.js"></script>
+    <script src="js/cursor-trail.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

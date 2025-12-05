@@ -1,1 +1,80 @@
+thnot wor<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | SIA KASHYAP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+</head>
+<body>
     <div id="cursor-trail"></div>
+    <div class="custom-cursor" id="custom-cursor"></div>
+    
+    <!-- Navigation -->
+    <nav class="lab-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Siaa Kashyap | (347)-204-3907 | kashs015@newschool.edu</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="photobooth.html" class="nav-link">Photobooth</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="lab-main">
+        <div id="grid-canvas"></div>
+        
+        <div class="page-container">
+            <h1 class="page-title glitch-text" data-text="RESEARCH PROFILE">RESEARCH PROFILE</h1>
+            
+            <div class="profile-container">
+                <!-- Photo Section -->
+                <div class="profile-photo-section blueprint-frame">
+                    <div class="photo-container">
+                        <div class="photo-placeholder" id="photo-sketch">
+                            <!-- p5.js sketch will go here -->
+                        </div>
+                    </div>
+                    <div class="photo-label">RESEARCHER PROFILE</div>
+                </div>
+                
+                <!-- Bio Section -->
+                <div class="bio-section blueprint-frame">
+                    <h2 class="section-title">BIO</h2>
+                    <div class="bio-content">
+                        <p>Creative technologist exploring the intersection of code, art, and interactive experiences. Specializing in generative art, real-time visual systems, and physical computing.</p>
+                        <p>Currently experimenting with algorithmic patterns, sensor-based installations, and immersive digital environments that blur the line between virtual and physical spaces.</p>
+                    </div>
+                </div>
+                
+                <!-- Skills Section -->
+                <div class="skills-section blueprint-frame">
+                    <h2 class="section-title">SKILLS & TOOLS</h2>
+                    <div class="skills-grid" id="skills-grid">
+                        <!-- Skills will be dynamically generated -->
+                    </div>
+                </div>
+                
+                <!-- Inspirations Section -->
+                <div class="inspirations-section blueprint-frame">
+                    <h2 class="section-title">INSPIRATIONS</h2>
+                    <div class="inspirations-list" id="inspirations-list">
+                        <!-- Inspirations will be dynamically generated -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/grid-animation.js"></script>
+    <script src="js/cursor-trail.js"></script>
+    <script src="js/floating-buttons.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

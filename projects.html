@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | SIA KASHYAP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+</head>
+<body class="projects-page">
+    <div id="cursor-trail"></div>
+    <div class="custom-cursor" id="custom-cursor"></div>
+    
+    <!-- Navigation -->
+    <nav class="lab-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Siaa Kashyap | (347)-204-3907 | kashs015@newschool.edu</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="photobooth.html" class="nav-link">Photobooth</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="lab-main">
+        <div id="grid-canvas"></div>
+        
+        <div class="page-container">
+             <div class="projects-subnav" style="margin-bottom: 2rem; padding: 1rem 2rem; font-family: 'Kalam', cursive;">
+                <a href="p5-sketches.html" style="color: var(--notebook-text); text-decoration: none; font-size: 1.1rem; padding: 0.5rem 1rem; background: rgba(255,255,255,0.7); border: 2px solid rgba(0,0,0,0.2); border-radius: 4px; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.9)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255,255,255,0.7)'; this.style.transform='translateY(0)'">
+                    Other p5 Sketches →
+                </a>
+            </div>
+            <div class="notebook-projects-container" id="desk-container">
+                <!-- Project tiles will be dynamically generated -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content module-frame">
+            <span class="close-modal">&times;</span>
+            <div class="module-header">
+                <h2 id="modal-title">Project Title</h2>
+            </div>
+            <div class="module-body" id="modal-body">
+                <!-- Project content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/grid-animation.js"></script>
+    <script src="js/cursor-trail.js"></script>
+    <script src="js/projects-desk.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

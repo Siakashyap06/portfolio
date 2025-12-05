@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other p5 Sketches | SIA KASHYAP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="p5-sketches.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+</head>
+<body class="p5-sketches-page">
+    <div id="cursor-trail"></div>
+    <div class="custom-cursor" id="custom-cursor"></div>
+    
+    <!-- Navigation -->
+    <nav class="lab-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Siaa Kashyap | (347)-204-3907 | kashs015@newschool.edu</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="photobooth.html" class="nav-link">Photobooth</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="lab-main">
+        <div id="grid-canvas"></div>
+        
+        <div class="page-container">
+            <div class="breadcrumb" style="margin-bottom: 1rem; font-family: 'Kalam', cursive; font-size: 0.95rem; color: #666;">
+                <a href="projects.html" style="color: #666; text-decoration: none;">Projects</a>
+                <span style="margin: 0 0.5rem;">/</span>
+                <span style="color: var(--notebook-text);">Other p5 Sketches</span>
+            </div>
+            <h1 class="page-title" style="font-family: 'Kalam', cursive; font-size: 2.5rem; color: var(--notebook-text); margin-bottom: 2rem; text-align: center;">Other p5 Sketches</h1>
+            
+            <div class="intro-section" style="font-family: 'Kalam', cursive; font-size: 1.1rem; color: var(--notebook-text); line-height: 1.8; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto; padding: 0 2rem;">
+                <p>These are smaller interactive experiments made in p5.js, focusing on generative patterns, motion, and playful visual ideas.</p>
+            </div>
+            
+            <div class="sketches-container" id="sketches-container">
+                <!-- Sketches will be dynamically generated -->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/grid-animation.js"></script>
+    <script src="js/cursor-trail.js"></script>
+    <script src="js/p5-sketches.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

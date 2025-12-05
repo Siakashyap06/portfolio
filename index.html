@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIA KASHYAP | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+</head>
+<body>
+    <div id="cursor-trail"></div>
+    <div class="custom-cursor" id="custom-cursor"></div>
+    
+    <!-- Navigation -->
+    <nav class="lab-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Siaa Kashyap | (347)-204-3907 | kashs015@newschool.edu</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="photobooth.html" class="nav-link">Photobooth</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="lab-main">
+        <!-- Animated Grid Background -->
+        <div id="grid-canvas"></div>
+        
+        <!-- Welcome Title -->
+        <div class="welcome-title">
+            <h1 class="handwritten-title">welcome</h1>
+        </div>
+
+        <!-- Handwritten Text -->
+        <div class="handwritten-text-container">
+            <p class="handwritten-text" id="handwritten-text"></p>
+        </div>
+
+        <!-- Floating Navigation Buttons -->
+        <div class="floating-buttons" id="floating-buttons">
+            <!-- Buttons will be dynamically generated -->
+        </div>
+        
+        <!-- Drawing Tool -->
+        <div class="drawing-tool-container">
+            <div class="drawing-tool">
+                <div class="pencil-icon">✏️</div>
+                <div class="drawing-instruction">take notes</div>
+                <button class="clear-drawing-btn" id="clear-drawing" title="Clear notes">🗑️</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/grid-animation.js"></script>
+    <script src="js/cursor-trail.js"></script>
+    <script src="js/handwritten-text.js"></script>
+    <script src="js/floating-buttons.js"></script>
+    <script src="js/notebook-drawing.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
